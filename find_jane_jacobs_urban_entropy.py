@@ -88,6 +88,15 @@ def find_urban_entropy_gmaps(location):
         add_entropy_to_mongodb(google_entropy["results"])
 
 
+def find_urban_entropy_yelp(dummy_location):
+    """
+       Query Yelp to find the user ratings of the places around a coordinate.
+    """
+    # https://www.yelp.com/developers/documentation/v2/search_api
+    # to implement (requires a Yelp API key)
+    pass
+
+
 class Config(object):
     """
        Namespace to hold global config parameters affecting the logic of
